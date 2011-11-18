@@ -1,0 +1,83 @@
+# mkf file for building extension MediaScanner.
+# NOTE: This file was originally written by the extension builder, but will not
+# be overwritten (unless --force is specified) and is intended to be modified.
+display_name "Extensions/MediaScanner"
+
+includepath source/h
+includepath h
+
+defines
+{
+    #Define the verbose channel to be off by default (but controllable by icf)
+    IW_TRACE_CHANNEL_MEDIASCANNER_VERBOSE=2
+
+    #This macro indicates that this extension is being built
+    S3E_EXT_MEDIASCANNER
+}
+
+#This command re-generates the relevant source files from the s4e when
+#the mkb is run
+extension
+{
+    ("$MARMALADE_ROOT/extensions/builder")
+    "make_extension MediaScanner.s4e"
+}
+
+#include the extension builder subproject
+subproject "$MARMALADE_ROOT/s3e/edk"
+
+if {{defined I3D_OS_IPHONE}}
+{
+    files
+    {
+        ["source"]
+        (use_first_found, source/iphone, source/generic)
+        MediaScanner_platform.mm
+        #Add any iphone-specific files here
+    }
+}
+
+if {{defined I3D_OS_WINDOWS}}
+{
+    files
+    {
+        ["source"]
+        (use_first_found, source/windows, source/generic)
+        MediaScanner_platform.cpp
+        #Add any windows-specific files here
+    }
+}
+
+if {{defined S3E_ANDROID}}
+{
+    files
+    {
+        ["source"]
+        (use_first_found, source/android, source/generic)
+        MediaScanner_platform.cpp
+        #Add any android-specific files here
+    }
+}
+
+files
+{
+
+    # Add any platform-independent files here
+    # Note that if the file exists in the platform-specific directory
+    # it will be taken from there instead of 'generic'
+    MediaScanner_register.cpp
+    MediaScanner.cpp
+
+    ["h"]
+    (source/h)
+    MediaScanner_internal.h
+    MediaScanner_autodefs.h
+
+    ["docs"]
+    (interface)
+    MediaScanner.defines.txt
+
+    []
+    (.)
+    MediaScanner.s4e
+}

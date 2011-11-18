@@ -1,0 +1,18 @@
+#!/usr/bin/env mkb
+# Builder mkb file for the MediaScanner extension on android
+
+platform LINUX
+
+buildtype(SCONS, ARM)
+
+define S3E_ANDROID
+
+options
+{
+    dll
+    output-name="lib/android/libMediaScanner.so"
+    output-name-debug="lib/android/libMediaScanner_d.so"
+}
+define S3E_BUILD_EXT
+
+subproject MediaScanner_build

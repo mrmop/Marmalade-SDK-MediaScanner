@@ -1,0 +1,8 @@
+include:
+
+#include <s3eTypes.h>
+
+functions:
+
+void Scan(const char* filepath, const char* mime_type) NULL run_on_os_thread
+

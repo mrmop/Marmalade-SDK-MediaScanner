@@ -1,0 +1,376 @@
+
+Discarded input sections
+
+ _ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 release\MediaScanner_platform.os
+ _ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+                0x00000000        0x0 release\MediaScanner_platform.os
+ .text          0x00000000        0x0 release\MediaScanner_platform.os
+ .data          0x00000000        0x0 release\MediaScanner_platform.os
+ .note.GNU-stack
+                0x00000000        0x0 release\MediaScanner_platform.os
+ .text          0x00000000        0x0 release\MediaScanner.os
+ .data          0x00000000        0x0 release\MediaScanner.os
+ .bss           0x00000000        0x0 release\MediaScanner.os
+ .note.GNU-stack
+                0x00000000        0x0 release\MediaScanner.os
+ .text          0x00000000        0x0 release\MediaScanner_register.os
+ .data          0x00000000        0x0 release\MediaScanner_register.os
+ .bss           0x00000000        0x0 release\MediaScanner_register.os
+ .text._Z23MediaScannerRegisterExtv
+                0x00000000        0x0 release\MediaScanner_register.os
+ .note.GNU-stack
+                0x00000000        0x0 release\MediaScanner_register.os
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD release\MediaScanner_platform.os
+LOAD release\MediaScanner.os
+LOAD release\MediaScanner_register.os
+LOAD E:\marmalade\5.1\s3e\edk\lib\android\libedkcore.a
+LOAD E:\marmalade\5.1\s3e\edk\lib\android/libplaceholderplaceholderplaceholderplaceholderplaceholder.so
+LOAD E:\Program Files\Android\android-ndk\platforms\android-9\arch-arm\usr\lib/libc.so
+LOAD E:\Program Files\Android\android-ndk\platforms\android-9\arch-arm\usr\lib/libm.so
+LOAD E:\Program Files\Android\android-ndk\platforms\android-9\arch-arm\usr\lib/liblog.so
+LOAD E:\Program Files\Android\android-ndk\platforms\android-9\arch-arm\usr\lib/libstdc++.so
+                0x000000b4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000b4       0x58
+ *(.hash)
+ .hash          0x000000b4       0x58 release\MediaScanner_platform.os
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000010c      0x110
+ *(.dynsym)
+ .dynsym        0x0000010c      0x110 release\MediaScanner_platform.os
+
+.dynstr         0x0000021c       0xd9
+ *(.dynstr)
+ .dynstr        0x0000021c       0xd9 release\MediaScanner_platform.os
+
+.gnu.version    0x000002f6        0x0 load address 0x000002f5
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 release\MediaScanner_platform.os
+
+.gnu.version_d  0x000002f8        0x0 load address 0x000002f5
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 release\MediaScanner_platform.os
+
+.gnu.version_r  0x000002f8        0x0 load address 0x000002f5
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 release\MediaScanner_platform.os
+
+.rel.dyn        0x000002f8       0x18
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x000002f8       0x18 release\MediaScanner_platform.os
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.plt        0x00000310       0x18
+ *(.rel.plt)
+ .rel.plt       0x00000310       0x18 release\MediaScanner_platform.os
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(.init)
+
+.plt            0x00000328       0x38
+ *(.plt)
+ .plt           0x00000328       0x38 release\MediaScanner_platform.os
+
+.text           0x00000360      0x3a4
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text._Z30MediaScannerTerminate_platformv
+                0x00000360        0x4 release\MediaScanner_platform.os
+                0x00000360                MediaScannerTerminate_platform()
+ .text._ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
+                0x00000364       0x38 release\MediaScanner_platform.os
+                0x00000364                _JNIEnv::CallVoidMethod(_jobject*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+                0x0000039c       0x38 release\MediaScanner_platform.os
+                0x0000039c                _JNIEnv::NewObject(_jclass*, _jmethodID*, ...)
+ .text._Z25MediaScannerInit_platformv
+                0x000003d4      0x198 release\MediaScanner_platform.os
+                0x000003d4                MediaScannerInit_platform()
+ .text._ZL27s3eEdkAndroidFindClass_realPKc
+                0x0000056c       0x5c release\MediaScanner_platform.os
+ .text._Z13Scan_platformPKcS0_
+                0x000005c8       0xa0 release\MediaScanner_platform.os
+                0x000005c8                Scan_platform(char const*, char const*)
+ .text.Scan     0x00000668       0x10 release\MediaScanner.os
+                0x00000668                Scan
+ .text._Z21MediaScannerTerminatev
+                0x00000678       0x10 release\MediaScanner.os
+                0x00000678                MediaScannerTerminate()
+ .text._Z16MediaScannerInitv
+                0x00000688       0x10 release\MediaScanner.os
+                0x00000688                MediaScannerInit()
+ .text.RegisterExt
+                0x00000698       0x6c release\MediaScanner_register.os
+                0x00000698                RegisterExt
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini
+ *(.fini)
+                0x00000704                PROVIDE (__etext, .)
+                0x00000704                PROVIDE (_etext, .)
+                0x00000704                PROVIDE (etext, .)
+
+.rodata         0x00000704       0x4c
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00000704       0x4c release\MediaScanner_platform.os
+ .rodata.str1.4
+                0x00000000       0x10 release\MediaScanner_register.os
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000750                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000750                __exidx_end = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x00000750                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00001750                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00001750       0xa0
+ *(.dynamic)
+ .dynamic       0x00001750       0xa0 release\MediaScanner_platform.os
+                0x00001750                _DYNAMIC
+                0x000017f0                . = (. DATA_SEGMENT_RELRO_END 0x0)
+
+.got            0x000017f0       0x24
+ *(.got.plt)
+ .got.plt       0x000017f0       0x18 release\MediaScanner_platform.os
+                0x000017f0                _GLOBAL_OFFSET_TABLE_
+ *(.got)
+ .got           0x00001808        0xc release\MediaScanner_platform.os
+
+.data           0x00001814        0x0
+                0x00001814                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                0x00001814                _edata = .
+                0x00001814                PROVIDE (edata, .)
+                0x00001814                __bss_start = .
+                0x00001814                __bss_start__ = .
+
+.bss            0x00001814        0x8
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 release\MediaScanner_platform.os
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00001814        0x8 release\MediaScanner_platform.os
+ *(COMMON)
+                0x0000181c                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000181c                _bss_end__ = .
+                0x0000181c                __bss_end__ = .
+                0x0000181c                . = ALIGN (0x4)
+                0x0000181c                . = ALIGN (0x4)
+                0x0000181c                __end__ = .
+                0x0000181c                _end = .
+                0x0000181c                PROVIDE (end, .)
+                0x0000181c                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x36
+ *(.comment)
+ .comment       0x00000000       0x12 release\MediaScanner_platform.os
+ .comment       0x00000012       0x12 release\MediaScanner.os
+ .comment       0x00000024       0x12 release\MediaScanner_register.os
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+OUTPUT(E:\apps\airplay\libs\mediascanner\lib\android\libMediaScanner.so elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x28
+ .ARM.attributes
+                0x00000000       0x28 release\MediaScanner_platform.os
+ .ARM.attributes
+                0x00000028       0x28 release\MediaScanner.os
+ .ARM.attributes
+                0x00000050       0x28 release\MediaScanner_register.os
